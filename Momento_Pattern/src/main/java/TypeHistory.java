@@ -11,7 +11,7 @@ public class TypeHistory {
 
     public void revert(TextUndo textUndo){
         if(!history.isEmpty()){
-            history.pop();
+            textUndo.undo(history.pop());
         }else
             System.out.println("Undo Failed");
     }

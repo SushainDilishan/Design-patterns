@@ -17,6 +17,7 @@ public class TextUndo {
         return new TextMomento(getTexts());
     }
 
+
     public void undo(TextMomento textMomento){
         texts=textMomento.getTexts();
     }
